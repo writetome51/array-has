@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var getIndexOfPrimitive_1 = require("../get/indexes/getIndexOfPrimitive");
+var getIndexOfPrimitive_1 = require("@writetome51/array-get-indexes-basic/getIndexOfPrimitive");
 function arrayContainsPrimitive(primitive, array) {
     var primitives = ['number', 'string', 'boolean', 'undefined'];
     // @ts-ignore
