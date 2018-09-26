@@ -1,0 +1,21 @@
+{
+  "name": "@writetome51/array-analysis-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "manipulation",
+    "manipulator"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "dependencies": {
+    "basic-data-handling": "latest",
+    "@writetome51/array-and-index-validation": "latest",
+    "@writetome51/array-get-indexes-basic": "latest"
+  }
+}
