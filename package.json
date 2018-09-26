@@ -1,7 +1,7 @@
 {
   "name": "@writetome51/array-analysis-basic",
   "version": "1.0.0",
-  "description": "",
+  "description": "All these functions check the contents of the passed array and return boolean.",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
