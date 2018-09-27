@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-analysis-basic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "All these functions check the contents of the passed array and return boolean.",
   "main": "",
   "scripts": {
@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "basic-data-handling": "latest",
-    "@writetome51/array-and-index-validation": "latest",
     "@writetome51/array-get-indexes-basic": "latest"
   }
 }
