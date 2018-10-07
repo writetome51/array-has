@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-analysis-basic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "All these functions check the contents of the passed array and return boolean.",
   "main": "",
   "scripts": {
@@ -12,8 +12,9 @@
   },
   "keywords": [
     "array",
-    "manipulation",
-    "manipulator"
+    "contains",
+    "contents",
+    "manipulation"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
