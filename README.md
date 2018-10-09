@@ -9,3 +9,4 @@ arrayHasAny(values, array);
 arrayHasArray(arrayToSearchFor, arrayToSearchInside);
 
 arrayHasPrimitive(primitive, array);
+
