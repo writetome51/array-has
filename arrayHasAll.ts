@@ -1,5 +1,6 @@
-import {errorIfNotArray} from 'basic-data-handling/errorIfNotArray';
+import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
 import { arrayHas } from './arrayHas';
+
 
 // values cannot contain object.
 

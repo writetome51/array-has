@@ -1,14 +1,14 @@
-import { arrayContainsPrimitive } from '../arrayContainsPrimitive';
+import { arrayHasPrimitive } from '../arrayHasPrimitive';
 
 
-let primitives = [1.01, 1000, 'h', false, undefined, 'blah'];
+let primitives = [1.01, 1000, 'h', false, 'blah'];
 
 
 // Test 1: Make sure it can find all kinds of primitive. Should return true for each
 // iteration:
 let i = -1, results = [];
 while (++i < primitives.length) {
-	results.push(arrayContainsPrimitive(primitives[i], primitives));
+	results.push(arrayHasPrimitive(primitives[i], primitives));
 }
 if (results.length === primitives.length && !results.includes(false) && !results.includes(undefined)) {
 	console.log('test 1 passed');
@@ -22,7 +22,7 @@ let arrayToSearch = [{}, [], 1, true, '', '123'];
 i = -1;
 results = [];
 while (++i < primitives.length) {
-	results.push(arrayContainsPrimitive(primitives[i], arrayToSearch));
+	results.push(arrayHasPrimitive(primitives[i], arrayToSearch));
 }
 if (results.length === primitives.length && !results.includes(true) && !results.includes(undefined)) {
 	console.log('test 2 passed');
@@ -33,7 +33,7 @@ else console.log('test 2 failed');
 // Test 3: if first argument is not primitive, it triggers error:
 let errorTriggered = false;
 try {
-	arrayContainsPrimitive([], arrayToSearch);
+	arrayHasPrimitive([], arrayToSearch);
 }
 catch (e) {
 	errorTriggered = true;
@@ -45,7 +45,7 @@ else console.log('test 3 failed');
 // Test 4: if second argument is not array, it triggers error:
 errorTriggered = false;
 try {
-	arrayContainsPrimitive(1, 'blahblah');
+	arrayHasPrimitive(1, 'blahblah');
 }
 catch (e) {
 	errorTriggered = true;

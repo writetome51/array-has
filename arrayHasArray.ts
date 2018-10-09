@@ -4,7 +4,7 @@ import { getFirstIndexOfArray } from '@writetome51/array-get-indexes-basic/getFi
 
 // If arrayToSearchFor contains an object, this will return false.
 
-export function arrayContainsArray(arrayToSearchFor, array): boolean {
+export function arrayHasArray(arrayToSearchFor, array): boolean {
 	errorIfNotArray(arrayToSearchFor);
 	return (getFirstIndexOfArray(arrayToSearchFor, array) > -1);
 }

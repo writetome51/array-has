@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var arrayContainsPrimitive_1 = require("../arrayContainsPrimitive");
-var primitives = [1.01, 1000, 'h', false, undefined, 'blah'];
+var arrayHasPrimitive_1 = require("../arrayHasPrimitive");
+var primitives = [1.01, 1000, 'h', false, 'blah'];
 // Test 1: Make sure it can find all kinds of primitive. Should return true for each
 // iteration:
 var i = -1, results = [];
 while (++i < primitives.length) {
-    results.push(arrayContainsPrimitive_1.arrayContainsPrimitive(primitives[i], primitives));
+    results.push(arrayHasPrimitive_1.arrayHasPrimitive(primitives[i], primitives));
 }
 if (results.length === primitives.length && !results.includes(false) && !results.includes(undefined)) {
     console.log('test 1 passed');
@@ -19,7 +19,7 @@ var arrayToSearch = [{}, [], 1, true, '', '123'];
 i = -1;
 results = [];
 while (++i < primitives.length) {
-    results.push(arrayContainsPrimitive_1.arrayContainsPrimitive(primitives[i], arrayToSearch));
+    results.push(arrayHasPrimitive_1.arrayHasPrimitive(primitives[i], arrayToSearch));
 }
 if (results.length === primitives.length && !results.includes(true) && !results.includes(undefined)) {
     console.log('test 2 passed');
@@ -29,7 +29,7 @@ else
 // Test 3: if first argument is not primitive, it triggers error:
 var errorTriggered = false;
 try {
-    arrayContainsPrimitive_1.arrayContainsPrimitive([], arrayToSearch);
+    arrayHasPrimitive_1.arrayHasPrimitive([], arrayToSearch);
 }
 catch (e) {
     errorTriggered = true;
@@ -41,7 +41,7 @@ else
 // Test 4: if second argument is not array, it triggers error:
 errorTriggered = false;
 try {
-    arrayContainsPrimitive_1.arrayContainsPrimitive(1, 'blahblah');
+    arrayHasPrimitive_1.arrayHasPrimitive(1, 'blahblah');
 }
 catch (e) {
     errorTriggered = true;
