@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-has",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "All these functions check the contents of the passed array and return boolean.",
   "main": "",
   "scripts": {

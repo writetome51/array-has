@@ -5,8 +5,3 @@ arrayHas(value, array);
 arrayHasAll(values, array);
 
 arrayHasAny(values, array);
-
-arrayHasArray(arrayToSearchFor, arrayToSearchInside);
-
-arrayHasPrimitive(primitive, array);
-
