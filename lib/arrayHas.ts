@@ -1,4 +1,4 @@
-import { getFirstIndexOf } from '@writetome51/array-get-indexes-basic/getFirstIndexOf';
+import { getFirstIndexOf } from '@writetome51/array-get-indexes-basic';
 
 
 // value cannot be object.

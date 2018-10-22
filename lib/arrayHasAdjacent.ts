@@ -1,8 +1,8 @@
-import { getIndexesOf } from '@writetome51/array-get-indexes-intermediate/getIndexesOf';
 import { isEmpty } from 'basic-data-handling/isEmpty_notEmpty';
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
-import { getAdjacentAt } from '@writetome51/array-get-adjacent-at/getAdjacentAt';
-import { arraysMatch } from '@writetome51/arrays-match/arraysMatch';
+import { getIndexesOf } from '@writetome51/array-get-indexes-intermediate';
+import { getAdjacentAt } from '@writetome51/array-get-adjacent-at';
+import { arraysMatch } from '@writetome51/arrays-match';
 
 // Checks if array contains adjacent values anywhere inside it.
 // values cannot contain object.

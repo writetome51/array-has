@@ -2,18 +2,28 @@
   "name": "@writetome51/array-has",
   "version": "1.0.2",
   "description": "All these functions check the contents of the passed array and return boolean.",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/array-has.git"
   },
   "keywords": [
     "array",
     "contains",
+    "has",
+    "boolean",
     "contents",
     "manipulation"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/array-has/issues"
+  },
+  "homepage": "https://github.com/writetome51/array-has#readme",
   "dependencies": {
     "basic-data-handling": "latest",
     "@writetome51/array-get-indexes-intermediate": "latest",
