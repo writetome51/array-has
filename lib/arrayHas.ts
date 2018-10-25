@@ -1,8 +1,10 @@
 import { getFirstIndexOf } from '@writetome51/array-get-indexes-basic';
+import {errorIfNotArray} from 'basic-data-handling/errorIfNotArray';
 
 
 // value cannot be object.
 
 export function arrayHas(value, array): boolean {
-	return (getFirstIndexOf(value, array) > -1);
+	errorIfNotArray(array);
+	return (array.length > 0 && (getFirstIndexOf(value, array) > -1));
 }

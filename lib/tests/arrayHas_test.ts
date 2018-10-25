@@ -43,15 +43,3 @@ catch (e) {
 }
 if (errorTriggered) console.log('test 6 passed');
 else console.log('test 6 FAILED');
-
-
-// Test 7: If array is empty, it triggers error:
-errorTriggered = false;
-try {
-	arrayHas('', []);
-}
-catch (e) {
-	errorTriggered = true;
-}
-if (errorTriggered) console.log('test 7 passed');
-else console.log('test 7 FAILED');
