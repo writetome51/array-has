@@ -45,19 +45,7 @@ if (errorTriggered) console.log('test 6 passed');
 else console.log('test 6 FAILED');
 
 
-// Test 7: If array is empty, it triggers error:
-errorTriggered = false;
-try {
-	arrayHasAny([1, 2, 3], []);
-}
-catch (e) {
-	errorTriggered = true;
-}
-if (errorTriggered) console.log('test 7 passed');
-else console.log('test 7 FAILED');
-
-
-// Test 8: If first arg is not array, it triggers error:
+// Test 7: If first arg is not array, it triggers error:
 errorTriggered = false;
 try {
 	arrayHasAny('hello!!!', [1,2,3,4]);
@@ -65,5 +53,5 @@ try {
 catch (e) {
 	errorTriggered = true;
 }
-if (errorTriggered) console.log('test 8 passed');
-else console.log('test 8 FAILED');
+if (errorTriggered) console.log('test 7 passed');
+else console.log('test 7 FAILED');

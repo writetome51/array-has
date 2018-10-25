@@ -43,15 +43,3 @@ catch (e) {
 }
 if (errorTriggered) console.log('test 6 passed');
 else console.log('test 6 FAILED');
-
-
-// Test 7: If array is empty, it triggers error:
-errorTriggered = false;
-try {
-	arrayHasAll([1,2,3], []);
-}
-catch (e) {
-	errorTriggered = true;
-}
-if (errorTriggered) console.log('test 7 passed');
-else console.log('test 7 FAILED');
