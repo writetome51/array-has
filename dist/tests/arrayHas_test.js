@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var arrayHas_1 = require("../arrayHas");
+var arrayHas_1 = require("../privy/arrayHas");
 // Test 2: Make sure it returns false when it does have values but not the requested one:
 var arr = [1, 2, 3];
 if (arrayHas_1.arrayHas(4, arr))

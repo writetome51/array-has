@@ -1,4 +1,4 @@
-import { arrayHasAny } from '../arrayHasAny';
+import { arrayHasAny } from '../privy/arrayHasAny';
 
 
 // Test 1: Make sure it returns false when it doesn't have any of the requested items:

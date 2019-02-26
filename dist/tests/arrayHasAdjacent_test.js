@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var arrayHasAdjacent_1 = require("../arrayHasAdjacent");
+var arrayHasAdjacent_1 = require("../privy/arrayHasAdjacent");
 var arr = [];
 // Test 1: Make sure it returns false when array and adjacent items to search for are
 // empty:

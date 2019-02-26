@@ -1,4 +1,4 @@
-import { arrayHas } from '../arrayHas';
+import { arrayHas } from '../privy/arrayHas';
 
 
 // Test 2: Make sure it returns false when it does have values but not the requested one:

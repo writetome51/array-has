@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var arrayHasAny_1 = require("../arrayHasAny");
+var arrayHasAny_1 = require("../privy/arrayHasAny");
 // Test 1: Make sure it returns false when it doesn't have any of the requested items:
 var arr = [1, 2, 3, '', 'abc', true, false];
 if (arrayHasAny_1.arrayHasAny(['b', 50, 10], arr))

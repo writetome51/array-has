@@ -1,5 +1,5 @@
-import { getFirstIndexOf } from '@writetome51/array-get-indexes-basic';
-import {errorIfNotArray} from 'basic-data-handling/errorIfNotArray';
+import { getFirstIndexOf } from '@writetome51/array-get-indexes';
+import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
 
 
 // value cannot be object.

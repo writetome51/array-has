@@ -1,4 +1,4 @@
-import { arrayHasAll } from '../arrayHasAll';
+import { arrayHasAll } from '../privy/arrayHasAll';
 
 
 // Test 1: Make sure it returns false when it doesn't have any of the requested items:

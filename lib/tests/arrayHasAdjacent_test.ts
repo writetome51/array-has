@@ -1,4 +1,4 @@
-import { arrayHasAdjacent } from '../arrayHasAdjacent';
+import { arrayHasAdjacent } from '../privy/arrayHasAdjacent';
 
 
 let arr = [];

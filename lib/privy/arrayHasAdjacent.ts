@@ -1,6 +1,6 @@
 import { isEmpty } from 'basic-data-handling/isEmpty_notEmpty';
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
-import { getIndexesOf } from '@writetome51/array-get-indexes-intermediate';
+import { getIndexesOf } from '@writetome51/array-get-indexes';
 import { getAdjacentAt } from '@writetome51/array-get-adjacent-at';
 import { arraysMatch } from '@writetome51/arrays-match';
 
