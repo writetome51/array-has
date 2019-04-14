@@ -1,8 +1,9 @@
-import { isEmpty } from 'basic-data-handling/isEmpty_notEmpty';
-import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
+import { arraysMatch } from '@writetome51/arrays-match';
+import { errorIfNotArray } from 'error-if-not-array';
 import { getIndexesOf } from '@writetome51/array-get-indexes';
 import { getAdjacentAt } from '@writetome51/array-get-adjacent-at';
-import { arraysMatch } from '@writetome51/arrays-match';
+import { isEmpty } from '@writetome51/is-empty-not-empty';
+
 
 // Checks if array contains adjacent values anywhere inside it.
 // values cannot contain object.
