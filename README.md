@@ -2,15 +2,15 @@
 
 Returns true if `value` is found in `array`.
 
-# arrayHasAll(values: any[], array): boolean
+# arrayHasAll(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
 
 Returns true if all `values` are found in `array`.
 
-# arrayHasAny(values: any[], array): boolean
+# arrayHasAny(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
 
 Returns true if at least 1 value in `values` is found in `array`.
 
-# arrayHasAdjacent(values: any[], array): boolean
+# arrayHasAdjacent(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
 
 Returns true if `array` contains exact sequence of `values`.
 
@@ -74,5 +74,6 @@ arrayHasAll(
 
 ## Loading
 ```js
-import {arrayHas, arrayHasAll, arrayHasAny, arrayHasAdjacent} from '@writetome51/array-has';
+import {arrayHas, arrayHasAll, arrayHasAny, arrayHasAdjacent} 
+    from '@writetome51/array-has';
 ```
