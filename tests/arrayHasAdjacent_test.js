@@ -1,4 +1,5 @@
-import { arrayHasAdjacent } from '../privy/arrayHasAdjacent.js';
+import {arrayHasAdjacent} from '../privy/arrayHasAdjacent.js';
+
 
 let arr = [];
 
@@ -16,8 +17,9 @@ else console.log('test 2 passed');
 
 
 // Test 3: Make sure it returns true when it does have requested values:
-arr = [1, 2, 3, 1, 2, 3, 4, 5];
-if (arrayHasAdjacent([1, 2, 3, 4], arr)) console.log('test 3 passed');
+let obj = {prop: {name: 'steve'}};
+arr = [1, 2, 3, 1, 2, 3, [obj], 5];
+if (arrayHasAdjacent([1, 2, 3, [obj]], arr)) console.log('test 3 passed');
 else console.log('test 3 FAILED');
 
 
@@ -48,10 +50,9 @@ else console.log('test 7 FAILED');
 // Test 8: If second argument is not array, it triggers error:
 let errorTriggered = false;
 try {
-    arrayHasAdjacent([1, 2], '');
-}
-catch (e) {
-    errorTriggered = true;
+	arrayHasAdjacent([1, 2], '');
+} catch (e) {
+	errorTriggered = true;
 }
 if (errorTriggered) console.log('test 8 passed');
 else console.log('test 8 FAILED');
@@ -60,10 +61,9 @@ else console.log('test 8 FAILED');
 // Test 9: If first argument is not array, it triggers error:
 errorTriggered = false;
 try {
-    arrayHasAdjacent('a', [1, 2]);
-}
-catch (e) {
-    errorTriggered = true;
+	arrayHasAdjacent('a', [1, 2]);
+} catch (e) {
+	errorTriggered = true;
 }
 if (errorTriggered) console.log('test 9 passed');
 else console.log('test 9 FAILED');

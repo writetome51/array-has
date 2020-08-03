@@ -5,7 +5,6 @@ import {getAdjacentAt} from '@writetome51/array-get-adjacent-at';
 import {isEmpty} from '@writetome51/is-empty-not-empty';
 
 
-
 // Checks if array contains adjacent `values` anywhere inside it.
 
 export function arrayHasAdjacent(values, array) {
