@@ -20,13 +20,6 @@ Returns true if `array` contains exact sequence of `values`.
 
 
 ## Loading
-```
-// if using TypeScript:
+```js
 import {arrayHas, arrayHasAll, arrayHasAny, arrayHasAdjacent} from '@writetome51/array-has';
-
-// if using ES5 JavaScript:
-var arrayHas = require('@writetome51/array-has').arrayHas;
-var arrayHasAll = require('@writetome51/array-has').arrayHasAll;
-var arrayHasAny = require('@writetome51/array-has').arrayHasAny;
-var arrayHasAdjacent = require('@writetome51/array-has').arrayHasAdjacent;
 ```
