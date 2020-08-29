@@ -12,11 +12,11 @@ export function arrayHasAdjacent(values, array) {
 	if (isEmpty(values)) return false;
 	let indexes = getIndexesOf(values[0], array);
 
-	let i = -1;
-	while (++i < indexes.length) {
-		if ((indexes[i] + values.length) > array.length) return false;
+	let i = -1, length = indexes.length, valuesLength = values.length, arrLength = array.length;
+	while (++i < length) {
+		if ((indexes[i] + valuesLength) > arrLength) return false;
 
-		let adjacentItems = getAdjacentAt(indexes[i], values.length, array);
+		let adjacentItems = getAdjacentAt(indexes[i], valuesLength, array);
 		if (arraysMatch(values, adjacentItems)) return true;
 	}
 	return false;

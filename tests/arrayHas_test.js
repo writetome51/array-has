@@ -56,3 +56,15 @@ try {
 }
 if (errTriggered) console.log('test 6A passed');
 else console.log('test 6A FAILED');
+
+let nums = [1, 2];
+arr = [1, 2, 3, 4, nums];
+console.time('arrayHas');
+let result = arrayHas([1, 2], arr);
+console.timeEnd('arrayHas');
+console.log(result);
+
+console.time('includes');
+result = arr.includes([1, 2]);
+console.timeEnd('includes');
+console.log(result);
