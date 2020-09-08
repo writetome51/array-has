@@ -12,8 +12,10 @@ export function arrayHasAdjacent(values, array) {
 	if (isEmpty(values)) return false;
 	let indexes = getIndexesOf(values[0], array);
 
-	let i = -1, length = indexes.length, valuesLength = values.length, arrLength = array.length;
-	while (++i < length) {
+	for (
+		let i = 0, length = indexes.length, valuesLength = values.length, arrLength = array.length; 
+	 	i < length;  ++i
+	) {
 		if ((indexes[i] + valuesLength) > arrLength) return false;
 
 		let adjacentItems = getAdjacentAt(indexes[i], valuesLength, array);

@@ -7,8 +7,7 @@ export function arrayHasAll(values, array) {
 	errorIfNotArray(values);
 	if (isEmpty(values)) return false;
 
-	let i = -1, length = values.length;
-	while (++i < length) {
+	for (let i = 0, length = values.length;  i < length;  ++i) {
 		if (!(arrayHas(values[i], array))) return false;
 	}
 	return true;

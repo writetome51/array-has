@@ -42,15 +42,9 @@ if (arrayHas([1.0555], arr)) console.log('test 5 FAILED');
 else console.log('test 5 passed');
 
 
-// Test 6: Make sure it doesn't return true if second arg is empty string:
-if (arrayHas('', '')) console.log('test 6 FAILED');
-else console.log('test 6 passed');
-
-
-// Test 6A: Make sure it errors if second arg is string with length:
 let errTriggered = false;
 try {
-	arrayHas('a', 'a');
+	console.log(arrayHas(undefined, false));
 } catch (e) {
 	errTriggered = true;
 }

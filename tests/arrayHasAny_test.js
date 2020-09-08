@@ -32,20 +32,9 @@ if (arrayHasAny(['xdfhT!@#$%^&*(_', 100], arr)) {
 else console.log('test 5 passed');
 
 
-// Test 6: If second argument is not array, it triggers error:
-let errorTriggered = false;
-try {
-    arrayHasAny([1, 2, 3], 'hello!!!!');
-}
-catch (e) {
-    errorTriggered = true;
-}
-if (errorTriggered) console.log('test 6 passed');
-else console.log('test 6 FAILED');
-
 
 // Test 7: If first arg is not array, it triggers error:
-errorTriggered = false;
+let errorTriggered = false;
 try {
     arrayHasAny('hello!!!', [1, 2, 3, 4]);
 }
