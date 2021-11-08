@@ -17,21 +17,38 @@ Returns true if `array` contains exact sequence of `values`.
 
 ## Examples
 ```js
+has(1, [1,2,3]); // --> true
+
+// Notice that arrays don't need to be identical via `===` to match:
 has(
     [2,3],
     [1, [2,3], 4, 5]
 );
 // --> true
 
+// Objects do need to be identical via `===` to match:
 has(
-    [2,3],
+    {name: 'joe'},
+    [1, 2, 3, {name: 'joe'}]
+);
+// --> false
+
+let obj =  {name: 'joe'};
+has(
+    obj,
+    [1, 2, 3, obj]
+);
+// --> true
+
+has(
+    [2, 3],
     [1, 2, 3, 4, 5]
 );
 // --> false
 
 hasAdjacent(
-    [true, false, true],
-    [true, true, false, true, false]
+    [2, 3],
+    [1, 2, 3, 4, 5]
 );
 // --> true
 
@@ -40,6 +57,7 @@ hasAdjacent(
     ['a','b','d','c']
 );
 // --> false
+
 
 hasAny(
     ['d', 'a'], 
@@ -52,7 +70,6 @@ hasAny(
     ['aaa', 'bb', 'c', 'cc']
 );
 // --> false
-
 
 hasAll(
     [1, 3, 5],
