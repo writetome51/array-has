@@ -1,4 +1,4 @@
-export declare function arrayHas(value: any, array: any[]): boolean;
-export declare function arrayHasAdjacent(values: any[], array: any[]): boolean;
-export declare function arrayHasAll(values: any[], array: any[]): boolean;
-export declare function arrayHasAny(values: any[], array: any[]): boolean;
+export declare const has: (value: any, array: any[]) => boolean;
+export declare const hasAdjacent: (values: any[], array: any[]) => boolean;
+export declare const hasAll: (values: any[], array: any[]) => boolean;
+export declare const hasAny: (values: any[], array: any[]) => boolean;

@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-has",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "All these functions check the contents of the passed array and return boolean.",
   "type": "module",
   "main": "index.js",
@@ -26,11 +26,10 @@
   },
   "homepage": "https://github.com/writetome51/array-has#readme",
   "dependencies": {
-    "error-if-not-array": ">=2.0.0",
     "@writetome51/array-get-indexes-of": ">=2.0.1",
-    "@writetome51/arrays-match": ">=2.0.2",
-    "@writetome51/array-get-adjacent-at": ">=2.0.2",
+    "@writetome51/is-array-not-array": ">=2.0.0",
     "@writetome51/is-empty-not-empty": ">=2.0.1",
-    "@writetome51/is-array-not-array": ">=2.0.0"
+    "@writetome51/is-match": ">=0.0.1",
+    "@writetome51/not": ">=2.0.0"
   }
 }
