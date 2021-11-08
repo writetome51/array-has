@@ -1,66 +1,66 @@
-# arrayHas(value, array): boolean
+# has(value, array): boolean
 
 Returns true if `value` is found in `array`.
 
-# arrayHasAll(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
+# hasAll(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
 
 Returns true if all `values` are found in `array`.
 
-# arrayHasAny(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
+# hasAny(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
 
 Returns true if at least 1 value in `values` is found in `array`.
 
-# arrayHasAdjacent(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
+# hasAdjacent(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values: any[],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): boolean
 
 Returns true if `array` contains exact sequence of `values`.
 
 
 ## Examples
 ```js
-arrayHas(
+has(
     [2,3],
     [1, [2,3], 4, 5]
 );
 // --> true
 
-arrayHas(
+has(
     [2,3],
     [1, 2, 3, 4, 5]
 );
 // --> false
 
-arrayHasAdjacent(
+hasAdjacent(
     [true, false, true],
     [true, true, false, true, false]
 );
 // --> true
 
-arrayHasAdjacent(
+hasAdjacent(
     ['a','b','c'],
     ['a','b','d','c']
 );
 // --> false
 
-arrayHasAny(
+hasAny(
     ['d', 'a'], 
     ['a', 'bb', 'c', 'cc']
 );
 // --> true
 
-arrayHasAny(
+hasAny(
     ['d', 'a'], 
     ['aaa', 'bb', 'c', 'cc']
 );
 // --> false
 
 
-arrayHasAll(
+hasAll(
     [1, 3, 5],
     [1, 2, 3, 4, 5, 6, 7]
 );
 // --> true
 
-arrayHasAll(
+hasAll(
     [1, 3, 5],
     [1, 2, 3, 4, 6, 7]
 );
@@ -74,6 +74,6 @@ arrayHasAll(
 
 ## Loading
 ```js
-import {arrayHas, arrayHasAll, arrayHasAny, arrayHasAdjacent} 
+import {has, hasAll, hasAny, hasAdjacent} 
     from '@writetome51/array-has';
 ```
